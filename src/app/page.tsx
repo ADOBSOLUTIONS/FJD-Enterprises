@@ -135,7 +135,7 @@ export default function Home() {
               starts here!
             </h1>
             <p>
-              Let’s Get Started Today! Call us now or request a free
+              Let&apos;s Get Started Today! Call us now or request a free
               consultation to begin your renovation journey. Your dream space is
               just a call away!
             </p>
@@ -315,7 +315,7 @@ export default function Home() {
             <FaStar size={18} color="var(--orange-dark)" />
           </div>
           <p>
-            We couldn't be happier with the work done by FJD. From start to
+            We couldn&apos;t be happier with the work done by FJD. From start to
             finish, their team was professional, attentive, and detail-oriented.
             They delivering a beautiful and sturdy structure on time and within
             budget. Highly recommend!
@@ -392,8 +392,8 @@ export default function Home() {
         <div className={styles.formContainer}>
           <h2>Request a Quote</h2>
           <p>
-            Fill out the form below, and we’ll reach out to you as soon as
-            possible. Let’s work together to bring your projects to life!
+            Fill out the form below, and we&apos;ll reach out to you as soon as
+            possible. Let&apos;s work together to bring your projects to life!
           </p>
 
           {/* <form onSubmit={handleSubmit}> */}
@@ -538,8 +538,8 @@ export default function Home() {
 
       {/*----------------------------------------CAREERS-----------------------------------*/}
       <div className={styles.careers}>
-        Do you want to be part of <b>FJD</b>'s team? Send us your resume to the
-        e-mail <b>{EmailInfo}</b> and we will contact you!
+        Do you want to be part of <b>FJD</b>&apos;s team? Send us your resume to
+        the e-mail <b>{EmailInfo}</b> and we will contact you!
       </div>
 
       {/*-----------------------------------------FOOTER------------------------------------*/}

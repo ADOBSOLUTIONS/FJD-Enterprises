@@ -75,7 +75,7 @@ export default function Home() {
             <div className={styles.container}>
               <MdOutlineMail size={30} color="var(--white)" />
               <div>
-                <p>Mail Us</p>
+                <p>Email Us</p>
                 <p>{EmailInfo}</p>
               </div>
             </div>
@@ -470,7 +470,7 @@ export default function Home() {
         <div className={styles.contact}>
           <div className={styles.main}>
             <h2>Contact Us</h2>
-            <h3>Let’s discuss how we can help you achieve your goals!</h3>
+            <h3>Let&apos;s discuss how we can help you achieve your goals!</h3>
 
             <div className={styles.infoContainer}>
               <div className={styles.info}>
@@ -503,7 +503,7 @@ export default function Home() {
                   className={styles.icon}
                 />
                 <div>
-                  <h4>Mail Us</h4>
+                  <h4>Email Us</h4>
                   <p>{EmailInfo}</p>
                 </div>
               </div>
@@ -523,12 +523,12 @@ export default function Home() {
             <ul className={styles.socialICons}>
               <li>
                 <Link href={FacebookLink} target="_blank">
-                  <FaFacebookF size={25} className={styles.icon} />
+                  <FaFacebookF className={styles.icon} />
                 </Link>
               </li>
               <li>
                 <Link href={InstagramLink} target="_blank">
-                  <FaInstagram size={25} className={styles.icon} />
+                  <FaInstagram className={styles.icon} />
                 </Link>
               </li>
             </ul>
@@ -539,7 +539,7 @@ export default function Home() {
       {/*----------------------------------------CAREERS-----------------------------------*/}
       <div className={styles.careers}>
         Do you want to be part of <b>FJD</b>&apos;s team? Send us your resume to
-        the e-mail <b>{EmailInfo}</b> and we will contact you!
+        the email <b>{EmailInfo}</b> and we will contact you!
       </div>
 
       {/*-----------------------------------------FOOTER------------------------------------*/}

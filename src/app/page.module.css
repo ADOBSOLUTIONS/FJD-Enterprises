@@ -260,6 +260,7 @@
         rgba(17, 11, 7, 0.743)
       ),
       url("/images/banners/elements.jpg");
+    background-attachment: unset;
     .bannerContent {
       width: 100%;
       padding: 30% 2rem 2.5rem;
@@ -1014,6 +1015,8 @@
 
 @media (max-width: 430px) {
   .testimonials {
+    background-attachment: unset;
+    background-position: right 35% bottom 45%;
     flex-direction: column;
     height: fit-content;
     padding-bottom: 2rem;
@@ -1384,35 +1387,7 @@
     }
   }
 
-  /*-----------FOLLOW US--------------*/
-  .contactSocial {
-    display: flex;
-    flex-direction: column;
-    margin-left: 4rem;
-    padding-top: 2rem;
-
-    .socialICons {
-      color: var(--white);
-      list-style: none;
-      display: flex;
-      margin-top: 1.2rem;
-    }
-
-    .socialICons li {
-      margin-right: 1rem;
-      cursor: pointer;
-    }
-    .socialICons li:hover {
-      color: var(--orange-dark);
-    }
-  }
-  .contactSocial h5 {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  .contactContainer {
+  @media only screen and (max-width: 1440px) {
     .contact {
       padding: 3rem 3rem 2rem;
       width: 85%;
@@ -1422,10 +1397,8 @@
       }
     }
   }
-}
 
-@media only screen and (max-width: 1024px) {
-  .contactContainer {
+  @media only screen and (max-width: 1024px) {
     .contact h2 {
       font-size: 30px;
     }
@@ -1454,17 +1427,9 @@
         }
       }
     }
-    .contactSocial {
-      margin-left: 0;
-    }
-    .contactSocial h5 {
-      font-size: 20px;
-    }
   }
-}
 
-@media (max-width: 768px) {
-  .contactContainer {
+  @media (max-width: 768px) {
     .contact h2 {
       font-size: 20px;
     }
@@ -1496,6 +1461,96 @@
         }
         .infoContainer h4 {
           font-size: 14px;
+        }
+      }
+    }
+  }
+
+  /*-----------FOLLOW US--------------*/
+  .contactSocial {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    padding-top: 2rem;
+
+    .socialICons {
+      color: var(--white);
+      list-style: none;
+      display: flex;
+      margin-top: 1.2rem;
+      .icon {
+        font-size: 28px;
+      }
+    }
+
+    .socialICons li {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    .socialICons li:hover {
+      color: var(--orange-dark);
+    }
+  }
+  .contactSocial h5 {
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .contactSocial {
+      margin-left: 0;
+      .socialICons {
+        .icon {
+          font-size: 24px;
+        }
+      }
+    }
+    .contactSocial h5 {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact h2 {
+      font-size: 20px;
+    }
+    .contact h3 {
+      font-size: 16px;
+    }
+    .contact {
+      width: 100%;
+      border-radius: 0;
+      padding: 4rem 2rem 2rem;
+      box-shadow: none;
+      margin: 0;
+
+      .main {
+        padding: 0;
+        .infoContainer {
+          .info {
+            .icon {
+              font-size: 25px;
+            }
+          }
+          .info p {
+            font-size: 14px;
+          }
+          .info div {
+            margin-left: 0.8rem;
+            padding-left: 0.8rem;
+          }
+        }
+        .infoContainer h4 {
+          font-size: 14px;
+        }
+      }
+      .contactSocial h5 {
+        font-size: 16px;
+      }
+      .contactSocial {
+        .socialICons {
+          .icon {
+            font-size: 20px;
+          }
         }
       }
     }

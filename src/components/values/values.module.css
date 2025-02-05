@@ -1,0 +1,230 @@
+.values {
+  background: var(--gray-light);
+  padding: 4rem 0;
+
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    width: 100%;
+    padding: 0 6rem;
+
+    .valueImage {
+      background-color: var(--orange-dark);
+      border-radius: 100%;
+      width: 90px;
+      height: 90px;
+      border: 2px solid var(--gray-light-2);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .valueImage img {
+      width: 60px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 10px;
+      border: 1px solid var(--gray-light-2);
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 2rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .card h3 {
+      font-size: 30px;
+      color: var(--blue);
+      margin: 1rem 0;
+    }
+
+    .card p {
+      font-size: 18px;
+      height: 80px;
+      font-weight: 600;
+      color: var(--gray-dark);
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1676px) {
+  .values {
+    .cardsContainer {
+      .card p {
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1530px) {
+  .values {
+    .cardsContainer {
+      .card p {
+        height: 110px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1364px) {
+  .values {
+    .cardsContainer {
+      .card p {
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .values {
+    .cardsContainer {
+      padding: 0 4rem;
+      .valueImage {
+        width: 70px;
+        height: 70px;
+      }
+      .valueImage img {
+        width: 45px;
+      }
+      .card {
+        padding: 2rem 1rem 3rem 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1094px) {
+  .values {
+    .cardsContainer {
+      .card p {
+        height: 150px;
+      }
+      .card h3 {
+        margin: 0.8rem 0 0.4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .values {
+    .cardsContainer {
+      .valueImage img {
+        width: 45px;
+      }
+      .card h3 {
+        font-size: 24px;
+      }
+      .card p {
+        height: 130px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 885px) {
+  .values {
+    padding: 3rem 0;
+    .cardsContainer {
+      padding: 0 2rem;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .values {
+    .cardsContainer {
+      gap: 15px;
+      padding: 0 1rem;
+      .valueImage {
+        width: 50px;
+        height: 50px;
+      }
+      .valueImage img {
+        width: 30px;
+      }
+      .card {
+        padding: 2rem 1rem;
+      }
+      .card p {
+        height: 140px;
+      }
+      .card h3 {
+        margin: 0.4rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .values {
+    .cardsContainer {
+      .card {
+        height: 290px;
+      }
+      .card h3 {
+        font-size: 18px;
+      }
+      .card p {
+        height: 130px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 718px) {
+  .values {
+    padding: 4rem 2rem;
+    .cardsContainer {
+      display: flex;
+      flex-direction: column;
+
+      .card {
+        height: fit-content;
+        padding: 1rem 1rem 1.5rem 3rem;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+      }
+
+      .valueImage {
+        position: absolute;
+        left: -15px;
+        top: -10px;
+      }
+
+      .card h3,
+      .card p {
+        margin-top: 10px;
+        text-align: left;
+      }
+
+      .card p {
+        height: fit-content;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .values {
+    padding: 4rem 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .values {
+    padding: 3rem 0;
+  }
+}

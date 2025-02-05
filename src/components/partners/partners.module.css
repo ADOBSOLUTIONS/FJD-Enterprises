@@ -1,0 +1,100 @@
+.partners {
+  background-color: var(--white);
+  height: 15vh;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .richvale {
+    height: 52%;
+  }
+}
+
+.partners img {
+  height: 40%;
+  margin: 0 5%;
+}
+
+@media only screen and (max-width: 1830px) {
+  .partners img {
+    height: 30%;
+  }
+}
+@media only screen and (max-width: 1405px) {
+  .partners img {
+    margin: 0 4%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .partners {
+    .brampton {
+      height: 35%;
+    }
+  }
+  .partners img {
+    height: 25%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .partners {
+    height: 6rem;
+    .brampton {
+      height: 40%;
+    }
+    .richvale {
+      height: 56%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    .richvale {
+      height: 50%;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .partners img {
+    margin: 0 3.5%;
+  }
+}
+
+@media (max-width: 550px) {
+  .partners {
+    .brampton {
+      height: 35%;
+    }
+    .richvale {
+      height: 45%;
+    }
+  }
+  .partners img {
+    height: 20%;
+    margin: 0 3%;
+  }
+}
+
+@media (max-width: 425px) {
+  .partners {
+    .brampton {
+      height: 30%;
+    }
+    .richvale {
+      height: 40%;
+    }
+  }
+  .partners img {
+    height: 18%;
+  }
+}
+
+@media (max-width: 375px) {
+  .partners {
+    display: none;
+  }
+}

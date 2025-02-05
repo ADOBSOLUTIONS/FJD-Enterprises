@@ -1,0 +1,270 @@
+.contactContainer {
+  width: 100%;
+  background: var(--gray-light);
+  display: flex;
+  justify-content: center;
+
+  .contact h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+
+  .contact h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .contact > p {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 4rem;
+  }
+
+  .contact {
+    width: 80%;
+    background: var(--blue-dark);
+    border-radius: 10px;
+    padding: 4rem 0 2rem;
+    color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    margin: 9rem 0;
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 10% 0;
+      .time {
+        font-size: 12px;
+        color: var(--gray-dark);
+      }
+    }
+
+    .infoContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      margin-top: 3rem;
+
+      .info {
+        display: flex;
+        margin-bottom: 2.5rem;
+
+        .icon {
+          font-size: 35px;
+        }
+      }
+
+      .info p {
+        font-weight: 400;
+        font-size: 18px;
+      }
+
+      .info div {
+        border-left: 1px solid var(--white);
+        margin-left: 1rem;
+        padding-left: 1rem;
+      }
+    }
+
+    .infoContainer h4 {
+      color: var(--orange-dark);
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .contact {
+      padding: 3rem 3rem 2rem;
+      width: 85%;
+      margin: 4rem 0;
+      .main {
+        padding: 1rem 1rem 0 4rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .contact h2 {
+      font-size: 30px;
+    }
+    .contact h3 {
+      font-size: 18px;
+    }
+    .contact {
+      padding: 2rem 2rem 2rem;
+      width: 90%;
+      margin: 3rem 0;
+
+      .main {
+        padding: 1rem 0 0 1rem;
+        .infoContainer {
+          .info p {
+            font-size: 16px;
+          }
+          .info {
+            .icon {
+              font-size: 30px;
+            }
+          }
+        }
+        .infoContainer h4 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact h2 {
+      font-size: 20px;
+    }
+    .contact h3 {
+      font-size: 16px;
+    }
+    .contact {
+      width: 100%;
+      border-radius: 0;
+      padding: 4rem 2rem 2rem;
+      box-shadow: none;
+      margin: 0;
+
+      .main {
+        padding: 0;
+        .infoContainer {
+          .info {
+            .icon {
+              font-size: 25px;
+            }
+          }
+          .info p {
+            font-size: 14px;
+          }
+          .info div {
+            margin-left: 0.8rem;
+            padding-left: 0.8rem;
+          }
+        }
+        .infoContainer h4 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  /*-----------FOLLOW US--------------*/
+  .contactSocial {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    padding-top: 2rem;
+
+    .socialICons {
+      color: var(--white);
+      list-style: none;
+      display: flex;
+      margin-top: 1.2rem;
+      .icon {
+        font-size: 28px;
+      }
+    }
+
+    .socialICons li {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    .socialICons li:hover {
+      color: var(--orange-dark);
+    }
+  }
+  .contactSocial h5 {
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .contactSocial {
+      margin-left: 0;
+      .socialICons {
+        .icon {
+          font-size: 24px;
+        }
+      }
+    }
+    .contactSocial h5 {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact {
+      width: 100%;
+      border-radius: 0;
+      padding: 4rem 2rem 2rem;
+      box-shadow: none;
+      margin: 0;
+
+      .main {
+        padding: 0;
+        .infoContainer {
+          .info {
+            .icon {
+              font-size: 25px;
+            }
+          }
+          .info p {
+            font-size: 14px;
+          }
+          .info div {
+            margin-left: 0.8rem;
+            padding-left: 0.8rem;
+          }
+        }
+        .infoContainer h4 {
+          font-size: 14px;
+        }
+      }
+      .contactSocial h5 {
+        font-size: 16px;
+      }
+      .contactSocial {
+        .socialICons {
+          .icon {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 740px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      .main {
+        padding: 1rem;
+      }
+      .contactSocial {
+        padding: 0 1rem;
+      }
+    }
+  }
+  @media (max-width: 634px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      .main {
+        .time {
+          color: var(--gray-primary);
+        }
+        .infoContainer {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    .contact {
+      background: var(--gray-dark-2);
+    }
+  }
+}

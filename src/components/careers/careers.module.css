@@ -1,0 +1,27 @@
+.careers {
+  font-size: 18px;
+  text-align: center;
+  padding: 1rem 0;
+  background: var(--white);
+  color: var(--blue-dark);
+  border-top: 1px solid var(--gray-light-2);
+}
+
+@media only screen and (max-width: 1024px) {
+  .careers {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .careers {
+    font-size: 14px;
+    padding: 1rem;
+  }
+}

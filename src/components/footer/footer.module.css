@@ -1,0 +1,21 @@
+.footer {
+  background: var(--black);
+  color: var(--gray-light-2);
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width: 670px) {
+  .footer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    font-size: 12px;
+  }
+}

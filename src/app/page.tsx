@@ -15,13 +15,13 @@ import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
 import Careers from "@/components/careers/careers";
 import Gallery from "@/components/gallery/gallery";
-import Quote from "@/components/quote/quote";
+// import Quote from "@/components/quote/quote";
 
 export default function Home() {
   // -------------------- Contact Info ---------------------------
   const PhoneNumber = "(647) 573-7518";
-  const WhatsappNumber = "(437) 427-4917";
-  const AddressInfo = "855 Ellesmere Rd, Scarborough - ON";
+  // const WhatsappNumber = "(437) 427-4917";
+  // const AddressInfo = "855 Ellesmere Rd, Scarborough - ON";
   const EmailInfo = "dpsdasilva@hotmail.com";
   const InstagramLink =
     "https://www.instagram.com/fjdenterprises?igsh=MXg4dHM4Mm91ODcwMQ%3D%3D&utm_source=qr";
@@ -34,7 +34,7 @@ export default function Home() {
   const section2Ref = useRef<HTMLDivElement>(null);
   const section3Ref = useRef<HTMLDivElement>(null);
   const section4Ref = useRef<HTMLDivElement>(null);
-  const section5Ref = useRef<HTMLDivElement>(null);
+  // const section5Ref = useRef<HTMLDivElement>(null);
   const section6Ref = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (

@@ -64,6 +64,8 @@
         border-left: 1px solid var(--white);
         margin-left: 1rem;
         padding-left: 1rem;
+        height: fit-content;
+        width: max-content;
       }
     }
 
@@ -98,6 +100,7 @@
 
       .main {
         padding: 1rem 0 0 1rem;
+        width: 100%;
         .infoContainer {
           .info p {
             font-size: 16px;
@@ -195,14 +198,18 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 970px) {
     .contact {
       width: 100%;
       border-radius: 0;
       padding: 4rem 2rem 2rem;
       box-shadow: none;
       margin: 0;
+    }
+  }
 
+  @media (max-width: 768px) {
+    .contact {
       .main {
         padding: 0;
         .infoContainer {

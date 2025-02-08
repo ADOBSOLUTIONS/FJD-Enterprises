@@ -55,6 +55,14 @@
   }
 }
 
+@media (max-width: 970px) {
+  .banner {
+    .bannerContent {
+      padding: 22% 0 3rem 2rem;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     background-position: 90% 100%;

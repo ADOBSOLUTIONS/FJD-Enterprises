@@ -25,7 +25,7 @@
     height: 527px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .testimonialsIntro h2 {
@@ -86,7 +86,7 @@
     }
 
     .aspas {
-      width: 50px;
+      width: 40px;
       position: absolute;
       bottom: 3rem;
       right: 2rem;
@@ -146,14 +146,66 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
+  .testimonials {
+    .testimonialsCard {
+      padding: 1.2rem;
+      .aspas {
+        width: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 970px) {
   .testimonials {
     padding: 0 2rem;
+
+    .testimonialsCard {
+      .testimonialsStars {
+        width: 50%;
+      }
+      .testimonialsAvatar img {
+        width: 35px;
+        margin-right: 10px;
+      }
+      .aspas {
+        width: 30px;
+        top: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .testimonials {
+    .testimonialsIntro {
+      height: 80%;
+      padding: 0 1rem 1rem;
+    }
+    .testimonialsCard {
+      height: 320px;
+    }
+  }
+}
+
+@media (max-width: 774px) {
+  .testimonials {
+    .testimonialsIntro {
+      height: 82%;
+    }
+    .testimonialsCard {
+      height: 340px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
     height: 450px;
 
     .testimonialsIntro {
       height: 85%;
-      padding: 0 1rem 1rem;
     }
     .testimonialsIntro h2 {
       font-size: 16px;
@@ -166,21 +218,10 @@
     }
 
     .testimonialsCard {
-      padding: 1.2rem;
       font-size: 14px;
-      .testimonialsStars {
-        width: 50%;
-      }
+      height: 310px;
       .testimonialsAvatar p {
         font-size: 14px;
-      }
-      .testimonialsAvatar img {
-        width: 35px;
-        margin-right: 10px;
-      }
-      .aspas {
-        width: 30px;
-        top: 1rem;
       }
     }
   }
@@ -250,6 +291,14 @@
       .testimonialsStars {
         width: 32%;
       }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .testimonials {
+    .testimonialsCard {
+      height: 235px;
     }
   }
 }

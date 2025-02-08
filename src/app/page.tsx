@@ -37,12 +37,9 @@ export default function Home() {
   // const section5Ref = useRef<HTMLDivElement>(null);
   const section6Ref = useRef<HTMLDivElement>(null);
 
-  const scrollToSection = (
-    ref: React.RefObject<HTMLDivElement | null>,
-    headerH = 110
-  ) => {
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
-      const headerHeight = headerH;
+      const headerHeight = 110;
       const sectionTop = ref.current.offsetTop - headerHeight;
       window.scrollTo({
         top: sectionTop,
@@ -91,9 +88,7 @@ export default function Home() {
                 <ul className={styles.menu}>
                   <li onClick={() => scrollToSection(section1Ref)}>home</li>
                   <li onClick={() => scrollToSection(section2Ref)}>services</li>
-                  <li onClick={() => scrollToSection(section3Ref, 150)}>
-                    about
-                  </li>
+                  <li onClick={() => scrollToSection(section3Ref)}>about</li>
                   <li onClick={() => scrollToSection(section4Ref)}>gallery</li>
                   <li onClick={() => scrollToSection(section6Ref)}>contact</li>
                 </ul>
@@ -107,7 +102,7 @@ export default function Home() {
           <ul className={styles.menu}>
             <li onClick={() => scrollToSection(section1Ref)}>home</li>
             <li onClick={() => scrollToSection(section2Ref)}>services</li>
-            <li onClick={() => scrollToSection(section3Ref, 150)}>about</li>
+            <li onClick={() => scrollToSection(section3Ref)}>about</li>
             <li onClick={() => scrollToSection(section4Ref)}>gallery</li>
             <li onClick={() => scrollToSection(section6Ref)}>contact</li>
           </ul>

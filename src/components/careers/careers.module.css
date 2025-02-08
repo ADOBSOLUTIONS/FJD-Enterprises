@@ -13,6 +13,12 @@
   }
 }
 
+@media (max-width: 940px) {
+  .careers {
+    padding: 1rem 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .careers {
     padding: 1rem 2rem;

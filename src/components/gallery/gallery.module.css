@@ -17,6 +17,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .gallery h2 {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 630px) {
   .gallery {
     background: var(--gray-dark);

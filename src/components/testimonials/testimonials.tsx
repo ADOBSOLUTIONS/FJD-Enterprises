@@ -52,7 +52,7 @@ export default function Testimonials() {
         </p>
         <div className={styles.testimonialsAvatar}>
           <img src="/images/testimonials/arthur.jpeg" alt="testimonial 1" />
-          <p>Arthur Oliveira Batista</p>
+          <p>Arthur Batista</p>
         </div>
         <img
           src="/images/testimonials/aspas_blue.png"

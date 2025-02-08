@@ -106,7 +106,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .ourServices {
     padding: 4rem;
   }
@@ -135,7 +135,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   .ourServices {
     padding: 4rem 2rem;
   }
@@ -143,11 +143,13 @@
     .cardServiceText {
       padding: 0 1rem 1rem 0;
     }
-    .cardServiceText h2 {
-      font-size: 20px;
-    }
-    .cardServiceText p {
-      font-size: 16px;
+    .cardService1,
+    .cardService2,
+    .cardService3,
+    .cardService4,
+    .cardService5,
+    .cardService6 {
+      height: 225px;
     }
     .cardService1:hover,
     .cardService2:hover,
@@ -158,6 +160,32 @@
       .text {
         padding: 0.5rem;
       }
+    }
+  }
+}
+@media (max-width: 776px) {
+  .cardsGrid {
+    .cardService1,
+    .cardService2 {
+      height: 90%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .cardsGrid {
+    .cardServiceText h2 {
+      font-size: 20px;
+    }
+    .cardServiceText p {
+      font-size: 16px;
+    }
+    .cardService1,
+    .cardService2,
+    .cardService3,
+    .cardService4,
+    .cardService5,
+    .cardService6 {
+      height: 200px;
     }
   }
 }

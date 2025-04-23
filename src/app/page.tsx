@@ -16,7 +16,6 @@ import Footer from "@/components/footer/footer";
 import Careers from "@/components/careers/careers";
 import Gallery from "@/components/gallery/gallery";
 import Quote from "@/components/quote/quote";
-import Image from "next/image";
 
 export default function Home() {
   // -------------------- Contact Info ---------------------------

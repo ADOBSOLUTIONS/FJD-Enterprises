@@ -15,7 +15,8 @@ import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
 import Careers from "@/components/careers/careers";
 import Gallery from "@/components/gallery/gallery";
-// import Quote from "@/components/quote/quote";
+import Quote from "@/components/quote/quote";
+import Image from "next/image";
 
 export default function Home() {
   // -------------------- Contact Info ---------------------------
@@ -34,13 +35,15 @@ export default function Home() {
   const section2Ref = useRef<HTMLDivElement>(null);
   const section3Ref = useRef<HTMLDivElement>(null);
   const section4Ref = useRef<HTMLDivElement>(null);
-  // const section5Ref = useRef<HTMLDivElement>(null);
+  const section5Ref = useRef<HTMLDivElement>(null);
   const section6Ref = useRef<HTMLDivElement>(null);
 
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
+  const scrollToSection = (
+    ref: React.RefObject<HTMLDivElement | null>,
+    heightHeader: number = 110
+  ) => {
     if (ref.current) {
-      const headerHeight = 110;
-      const sectionTop = ref.current.offsetTop - headerHeight;
+      const sectionTop = ref.current.offsetTop - heightHeader;
       window.scrollTo({
         top: sectionTop,
         behavior: "smooth",
@@ -88,7 +91,9 @@ export default function Home() {
                 <ul className={styles.menu}>
                   <li onClick={() => scrollToSection(section1Ref)}>home</li>
                   <li onClick={() => scrollToSection(section2Ref)}>services</li>
-                  <li onClick={() => scrollToSection(section3Ref)}>about</li>
+                  <li onClick={() => scrollToSection(section3Ref, 140)}>
+                    about
+                  </li>
                   <li onClick={() => scrollToSection(section4Ref)}>gallery</li>
                   <li onClick={() => scrollToSection(section6Ref)}>contact</li>
                 </ul>
@@ -102,7 +107,7 @@ export default function Home() {
           <ul className={styles.menu}>
             <li onClick={() => scrollToSection(section1Ref)}>home</li>
             <li onClick={() => scrollToSection(section2Ref)}>services</li>
-            <li onClick={() => scrollToSection(section3Ref)}>about</li>
+            <li onClick={() => scrollToSection(section3Ref, 140)}>about</li>
             <li onClick={() => scrollToSection(section4Ref)}>gallery</li>
             <li onClick={() => scrollToSection(section6Ref)}>contact</li>
           </ul>
@@ -123,7 +128,7 @@ export default function Home() {
       </header>
 
       <div ref={section1Ref}>
-        <Banner />
+        <Banner scrollToSection={() => scrollToSection(section5Ref, 140)} />
       </div>
 
       <div ref={section2Ref}>
@@ -143,9 +148,9 @@ export default function Home() {
       <Testimonials />
       <Partners />
 
-      {/* <div ref={section5Ref}>
+      <div ref={section5Ref}>
         <Quote />
-      </div> */}
+      </div>
 
       <div ref={section6Ref}>
         <Contact />

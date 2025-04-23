@@ -1,6 +1,12 @@
+import React from "react";
 import styles from "./banner.module.css";
+import { FaArrowRight } from "react-icons/fa";
 
-export default function Banner() {
+interface BannerProps {
+  scrollToSection: () => void;
+}
+
+export default function Banner({ scrollToSection }: BannerProps) {
   return (
     <div className={styles.banner}>
       <div className={styles.bannerContent}>
@@ -15,12 +21,9 @@ export default function Banner() {
             just a call away!
           </p>
         </div>
-        {/* <button
-          className={styles.buttonStyledBlue}
-          onClick={() => scrollToSection(section5Ref, 140)}
-        >
+        <button className={styles.buttonStyledBlue} onClick={scrollToSection}>
           Request a Quote &nbsp; <FaArrowRight />
-        </button> */}
+        </button>
       </div>
     </div>
   );

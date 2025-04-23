@@ -35,6 +35,26 @@
     font-weight: 600;
     width: 65%;
   }
+
+  .buttonStyledBlue {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background: var(--blue-dark);
+    border: 1px solid var(--white);
+    color: var(--white);
+
+    &:hover {
+      background-color: white;
+      color: var(--blue-dark);
+      border: 1px solid var(--blue-dark);
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {

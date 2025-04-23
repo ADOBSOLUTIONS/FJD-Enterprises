@@ -11,7 +11,7 @@ interface FileData {
 }
 
 export default function Quote() {
-  const EmailInfo = "samaracollet@gmail.com";
+  const EmailInfo = "dpsdasilva@hotmail.com";
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
